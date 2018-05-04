@@ -1,19 +1,27 @@
-<html>
-    <title>Puzzle</title> 
-    <head>
-    </head>
-    
-    <body>
-        <button name="btnClick" onclick="findstring();" >Click</button>
-        <script>
-                function findstring()
-                {
-                    var sourcestring="Hello, this is my first program";
-                    var findstring="feirs";
+<!DOCTYPE html>
 
-                    
-                    alert("string found" + findstring);
-                }
-        </script>
-    </body>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function HiCallMe() {
+            var listofnumber = TextBox1.value;
+            
+            for (i = 0; i < listofnumber.length; i++)
+            {
+                if (listofnumber[i] % 2 == 0)
+                    alert(listofnumber[i] +  " is even");
+                else
+                    alert(listofnumber[i] + "Odd");
+               
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <input id="TextBox1" name="TextBox1">
+    <button id="button1" onclick="HiCallMe();" >Venba..Click Here</button>
+</body>
 </html>
